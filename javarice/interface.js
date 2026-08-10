@@ -1,11 +1,11 @@
 function updateCounters() {
-    achievedSpan.textContent = `PASS: ${achieved}`;
-    failedSpan.textContent = `: ${failed}`;
-    totalSpan.textContent = `PRESCRIPTS: ${total}`;
+    achievedSpan.textContent = `PASasTE: ${achieved}`;
+    failedSpan.textContent = `FallASTe: ${failed}`;
+    totalSpan.textContent = `PRECEPTOS: ${total}`;
 }
 
 function showPlayButton() {
-    buttonContainer.innerHTML = `<button id="startBtn">Next</button>`;
+    buttonContainer.innerHTML = `<button id="startBtn">Siguiente</button>`;
     document.getElementById("startBtn").addEventListener("click", handlePlayClick);
 }
 
@@ -22,22 +22,22 @@ function showResultButtons() {
     canResolve = false;
 
     buttonContainer.innerHTML = `
-        <button id="achievedBtn" disabled>Pass</button>
-        <button id="failedBtn" disabled>Failed</button>
+        <button id="achievedBtn" disabled>Pase</button>
+        <button id="failedBtn" disabled>Falle</button>
     `;
 
     document.getElementById("achievedBtn").onclick = () => {
         if (!canResolve) return;
         achieved++; total++;
         updateCounters();
-        showResultText("CleAr");
+        showResultText("LiMpio");
     };
 
     document.getElementById("failedBtn").onclick = () => {
         if (!canResolve) return;
         failed++; total++;
         updateCounters();
-        showResultText("FaIL");
+        showResultText("FallASTe");
     };
 }
 function redirect(url, newTab = true) {
