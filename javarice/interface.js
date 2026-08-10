@@ -1,6 +1,6 @@
 function updateCounters() {
-    achievedSpan.textContent = `PASasTE: ${achieved}`;
-    failedSpan.textContent = `FallASTe: ${failed}`;
+    achievedSpan.textContent = `Pasaste: ${achieved}`;
+    failedSpan.textContent = `Fallaste: ${failed}`;
     totalSpan.textContent = `PRECEPTOS: ${total}`;
 }
 
@@ -30,14 +30,14 @@ function showResultButtons() {
         if (!canResolve) return;
         achieved++; total++;
         updateCounters();
-        showResultText("_terMinaDO_");
+        showResultText("Compl3tado");
     };
 
     document.getElementById("failedBtn").onclick = () => {
         if (!canResolve) return;
         failed++; total++;
         updateCounters();
-        showResultText("_FallASTe_");
+        showResultText("FallaSte");
     };
 }
 function redirect(url, newTab = true) {
