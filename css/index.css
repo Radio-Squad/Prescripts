@@ -32,14 +32,14 @@ body {
 #buttonContainer button {
     background: none;
     border: none;
-    color: #99edff;
+    color: #dc97ff;
     font-family: "code", monospace;
     font-size: 35px;
     cursor: pointer;
     text-shadow:
-    0 0 10px rgba(153, 237, 255, 0.8),
-    0 0 20px rgba(153, 237, 255, 0.5),
-    0 0 40px rgba(0, 183, 235, 0.3);
+    0 0 10px rgb(225 153 255 / 80%),
+    0 0 20px rgb(230 153 255 / 50%),
+    0 0 40px rgb(177 0 235 / 30%);
 }
     
 #buttonContainer button:hover {
