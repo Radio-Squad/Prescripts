@@ -30,14 +30,14 @@ function showResultButtons() {
         if (!canResolve) return;
         achieved++; total++;
         updateCounters();
-        showResultText("LiMpio");
+        showResultText("_terMinaDO_");
     };
 
     document.getElementById("failedBtn").onclick = () => {
         if (!canResolve) return;
         failed++; total++;
         updateCounters();
-        showResultText("FallASTe");
+        showResultText("_FallASTe_");
     };
 }
 function redirect(url, newTab = true) {
